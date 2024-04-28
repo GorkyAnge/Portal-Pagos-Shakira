@@ -31,10 +31,10 @@ class PaymentComponent extends React.Component {
   };
 
   handlePayment = () => {
-    const { amount, firstName, lastName, email } = this.state; // No necesitas parseInt aquí
+    const { amount, firstName, lastName, email } = this.state; 
     if (!isNaN(parseInt(amount))) {
-      // Parsea el amount aquí si es necesario
-      const result = this.paymentHandler.handlePayment(parseInt(amount)); // Parsea el amount aquí si es necesario
+      
+      const result = this.paymentHandler.handlePayment(parseInt(amount)); 
       Swal.fire({
         title: "Detalle de la Factura",
         html: `
